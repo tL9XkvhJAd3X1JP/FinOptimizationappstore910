@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginRight="@dimen/x15"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_parentview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/y10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:maxWidth="@dimen/x200"
+                    android:textColor="@color/main"
+                    android:textSize="@dimen/x18" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cotentview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/y10"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:id="@+id/msg_scrollview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/ll_content_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:layout_marginRight="@dimen/x10"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/x10"
+                            android:paddingBottom="@dimen/x10">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/y5"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/x10"
+                                android:layout_marginTop="@dimen/x20"
+                                android:layout_marginRight="@dimen/x10"
+                                android:layout_marginBottom="@dimen/x20"
+                                android:max="100"
+                                android:progress="0"
+                                android:progressDrawable="@drawable/bg_progress_bar"
+                                android:visibility="gone" />
+
+
+                            <TextView
+                                android:id="@+id/tv_msg"
+                                style="?android:attr/textAppearanceMedium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:minHeight="@dimen/y50"
+                                android:paddingLeft="@dimen/x10"
+                                android:paddingRight="@dimen/x10"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/x15" />
+
+                            <TextView
+                                android:id="@+id/btn_sure"
+                                style="@style/wiselink_button_main"
+                                android:layout_marginTop="@dimen/y10"
+                                android:text="确定"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="@android:color/black"
+                        android:dividerHeight="1px"
+                        android:listSelector="@android:color/transparent"
+                        android:paddingTop="@dimen/x10"
+                        android:paddingBottom="@dimen/x10"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/btn_sure1"
+                        style="@style/wiselink_button_main"
+                        android:layout_marginTop="@dimen/y10"
+                        android:text="确定"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/selector_dialog_close" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

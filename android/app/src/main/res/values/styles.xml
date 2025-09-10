@@ -1,0 +1,155 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="WiseLink.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+    </style>
+
+    <style name="CustomProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="wiselink_button_main">
+        <item name="android:background">@drawable/selector_blue_9_to_black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y32</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/x15</item>
+    </style>
+
+    <style name="wiselink_button">
+        <item name="android:background">@drawable/selector_white_20_to_black_20</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y35</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/x17</item>
+    </style>
+
+    <style name="wiselink_edittext_main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y40</item>
+        <item name="android:paddingLeft">@dimen/x8</item>
+        <item name="android:paddingRight">@dimen/x8</item>
+        <item name="android:lines">1</item>
+        <item name="android:background">@drawable/shape_main_input</item>
+    </style>
+
+    <style name="wiselink_edittext_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y38</item>
+        <item name="android:paddingLeft">@dimen/x8</item>
+        <item name="android:paddingRight">@dimen/x8</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColorHint">@color/blue6</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:textSize">@dimen/x14</item>
+
+    </style>
+
+    <style name="wiselink_edittext_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y32</item>
+        <item name="android:paddingLeft">@dimen/x8</item>
+        <item name="android:paddingRight">@dimen/x8</item>
+        <item name="android:textColor">@color/black3</item>
+    </style>
+
+    <style name="wiselink_text_button">
+        <item name="android:textColor">@color/blue9</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/x10</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/x12</item>
+        <item name="android:paddingBottom">@dimen/x4</item>
+        <item name="android:paddingTop">@dimen/x4</item>
+        <item name="android:paddingLeft">@dimen/x8</item>
+        <item name="android:paddingRight">@dimen/x8</item>
+    </style>
+
+    <!--图片选择器样式-->
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+
+    <style name="TrackPlayBackTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/green3</item>
+        <!--<item name="android:windowAnimationStyle">@style/activityAnimation</item>-->
+    </style>
+
+    <!--下载dialog样式-->
+    <style name="download_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="SplashScreen_SplashAnimation">
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+        <item name="android:windowEnterAnimation">@null</item>
+    </style>
+
+    <style name="SplashScreen_SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/SplashScreen_SplashAnimation</item>
+    </style>
+
+    <style name="SplashScreen_Fullscreen" parent="SplashScreen_SplashTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+</resources>
+

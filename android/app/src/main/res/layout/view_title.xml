@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:background="@color/blue9">
+
+        <FrameLayout
+            android:id="@+id/fl_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_back_arrow" />
+
+
+            <TextView
+                android:id="@+id/btn_text_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="46dp"
+                android:paddingRight="@dimen/x5"
+                android:textColor="@color/blue9"
+                android:textSize="@dimen/x12"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_right"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/x10" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="@dimen/x220"
+                android:text="hahah"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x15" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/btn_text_right"
+            style="@style/wiselink_text_button"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

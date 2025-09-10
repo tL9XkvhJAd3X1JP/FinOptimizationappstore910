@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <library.nonscrollviewpager.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x10"
+        android:background="@drawable/shape_blue_9_round"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/x5"
+        android:paddingBottom="@dimen/x5">
+
+        <TextView
+            android:id="@+id/tv_monitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/unchecked"
+            android:drawablePadding="@dimen/x5"
+            android:gravity="center_horizontal"
+            android:text="监控"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/unchecked"
+            android:drawablePadding="@dimen/x5"
+            android:gravity="center_horizontal"
+            android:text="预警"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x12" />
+
+        <TextView
+            android:id="@+id/tv_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/unchecked"
+            android:drawablePadding="@dimen/x5"
+            android:gravity="center_horizontal"
+            android:text="我的"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x12" />
+    </LinearLayout>
+
+</LinearLayout>

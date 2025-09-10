@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_last_pwd"
+        style="@style/wiselink_edittext_main"
+        android:layout_margin="@dimen/x10"
+        android:hint="输入旧密码"
+        android:inputType="textVisiblePassword"
+        android:textSize="@dimen/x12" />
+
+    <RelativeLayout
+        style="@style/wiselink_edittext_main"
+        android:layout_margin="@dimen/x10">
+
+        <CheckBox
+            android:id="@+id/btn_show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:button="@drawable/selector_show_pwd"
+            android:checked="false" />
+
+
+        <EditText
+            android:id="@+id/et_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_show_pwd"
+            android:background="@null"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM_"
+            android:hint="新密码"
+            android:inputType="textPassword"
+            android:textSize="@dimen/x12" />
+    </RelativeLayout>
+
+</LinearLayout>

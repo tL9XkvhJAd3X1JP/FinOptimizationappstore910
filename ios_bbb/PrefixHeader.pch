@@ -1,0 +1,90 @@
+//
+//  PrefixHeader.pch
+//  BaseProject
+//
+//  Created by janker on 2018/10/30.
+//  Copyright © 2018 ChenXing. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//header search path 要调整 王一下
+//全局宏
+#import "UtilsMacros.h"
+#import "URLMacros.h"
+#import "FontAndColorMacros.h"
+#import "ThirdMacros.h"
+#import "CommonMacros.h"
+
+
+
+//第三方
+#import <YYKit.h>
+//#import <YYModel/YYModel.h>
+#import <YTKNetwork.h>
+#import <MBProgressHUD.h>
+#import <AFNetworking.h>
+//#import <Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+//#import <YJProgressHUD.h>
+#import <CocoaLumberjack.h>
+#import <DateTools.h>
+#import <Masonry.h>
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>
+#import <BaiduMapAPI_Map/BMKMapComponent.h>
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
+#import <BMKLocationkit/BMKLocationComponent.h>
+//#import <BMKLocationkit/BMKLocationComponent.h>
+//#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+//#import <MJRefresh.h>
+//#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <SDWebImage/UIButton+WebCache.h>
+
+//基础类
+#import "ConstValue.h"
+//#import "ConstRenderView.h"
+#import "AppDelegate.h"
+#import "RequestAction.h"
+#import "BaseViewController.h"
+#import "UIColor+Hex.h"
+#import "UIView+BDTag.h"
+#import "UIView+Geometry.h"
+#import "NSDictionary+myDic.h"
+#import "NSMutableDictionary+myMutabelDic.h"
+#import "DataBaseUtil.h"
+#import "UIButton+EnlargeTouchArea.h"
+#import "NVLogManager.h"
+#import "NomalUtil.h"
+#import "UIButton+XYButton.h"
+#import "UIViewController+AlertViewAndActionSheet.h"
+#import "UICollectionView+IndexPath.h"
+#import "PPNetworkHelper.h"
+#import "AppDelegate+AppService.h"
+#import "SandBoxHelper.h"
+#import "MBProgressHUD+XY.h"
+#import "UINavigationController+myAdd.h"
+#import "NSString+Utilities.h"
+#import "NSString+Hashing.h"
+#import "NSData+AES256.h"
+#import "NSObject+BDAssociation.h"
+#import "SingleDataManager.h"
+#import "NSString+MD5Addition.h"
+#import "GCDUtil.h"
+#import "EventUtil.h"
+//#import "UIControl+QiEventInterval.h"
+//#import "RootViewController.h"
+//#import "RootNavigationController.h"
+//#import "MBProgressHUD+XY.h"
+//#import "PPNetworkHelper.h"
+//#import "AppManager.h"
+//#import "ShareManager.h"
+//#import "UserManager.h"
+//#import "IMManager.h"
+//#import "UIButton+XYButton.h"
+
+#endif /* PrefixHeader_pch */

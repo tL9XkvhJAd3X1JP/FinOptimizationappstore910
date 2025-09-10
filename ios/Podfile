@@ -1,0 +1,103 @@
+project 'FinOptimization.xcodeproj'
+# install! 'cocoapods', :deterministic_uuids => false
+platform :ios, '9.0'
+
+target 'FinOptimization' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for BaseProject
+#platform :ios, '8.0'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'YYKit'
+# pod 'YYModel'
+pod 'MBProgressHUD', '~> 1.1.0'
+pod 'YTKNetwork'
+pod 'SDWebImage'
+pod 'IQKeyboardManager' #iOS8 and later
+pod 'FMDB'#数据本地存
+pod 'CocoaLumberjack'#日志系统
+pod 'Toast' #吐丝
+pod 'MJRefresh' #下拉刷新
+pod 'DateTools' #时间
+pod 'Masonry'#Auto Layout第三方库
+# pod 'BaiduMapKit' #,'4.2.0'#百度地图SDK
+pod 'SGImageBrowser'
+
+
+    # Your 'node_modules' directory is probably in the root of your project,
+    # but if not, adjust the `:path` accordingly
+     pod 'React', :path => '../node_modules/react-native', :subspecs => [
+     'Core',
+     'CxxBridge', # Include this for RN >= 0.47
+     'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
+     
+     'RCTText',
+     'RCTNetwork',
+     'RCTWebSocket', # needed for debugging
+#     'RCTAnimation', # FlatList和原生动画功能需要此模块
+#    'RCTImage',
+#    'RCTGeolocation',
+#    'RCTSettings',
+#     'RCTVibration',
+#     'RCTActionSheet'
+     # Add any other subspecs you want to use in your project
+     ]
+     # Explicitly include Yoga if you are using RN >= 0.42.0
+     pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+     
+     # Third party deps podspec link
+     pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+     pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+     pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+     
+     pod 'react-native-baidumap-sdk', path: '../node_modules/react-native-baidumap-sdk/lib/ios'
+end
+
+#post_install do |installer|
+#    installer.pods_project.targets.each do |target|
+#        if target.name == "React"
+#            target.remove_from_project
+#        end
+#    end
+# pod 'YBImageBrowser'
+# pod 'MQTTKit', :git => 'https://github.com/mobile-web-messaging/MQTTKit.git'
+# end
+
+#platform :ios, '8.0'
+
+# The target name is most likely the name of your project.
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+# target 'FinOptimization' do
+#   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+#   # use_frameworks!
+# 
+#   # Pods for FinOptimization
+# 
+#   target 'FinOptimization-tvOSTests' do
+#     inherit! :search_paths
+#     # Pods for testing
+#   end
+# 
+#   target 'FinOptimizationTests' do
+#     inherit! :search_paths
+#     # Pods for testing
+#   end
+# 
+# end
+# 
+# target 'FinOptimization-tvOS' do
+#   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+#   # use_frameworks!
+# 
+#   # Pods for FinOptimization-tvOS
+# 
+#   target 'FinOptimization-tvOSTests' do
+#     inherit! :search_paths
+#     # Pods for testing
+#   end
+# 
+# end

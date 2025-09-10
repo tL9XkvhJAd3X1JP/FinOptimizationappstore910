@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="user" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.fin.optimization.bean.User" />
+    </list>
+
+    <!--<storage value="wiselink/db/" />-->
+
+</litepal>

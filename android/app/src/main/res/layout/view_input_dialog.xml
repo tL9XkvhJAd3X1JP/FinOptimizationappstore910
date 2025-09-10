@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/x10">
+
+    <EditText
+        android:id="@+id/et_words"
+        style="@style/wiselink_edittext_main"
+        android:layout_height="@dimen/y120"
+        android:layout_marginBottom="@dimen/y2"
+        android:gravity="left|top"
+        android:lines="10000"
+        android:paddingBottom="@dimen/x5"
+        android:paddingTop="@dimen/x5"
+        android:textSize="@dimen/x15"/>
+
+    <TextView
+        android:id="@+id/tv_text_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/btn_sure"
+        style="@style/wiselink_button_main"
+        android:layout_marginTop="@dimen/y2"
+        android:text="确定"/>
+
+
+</LinearLayout>

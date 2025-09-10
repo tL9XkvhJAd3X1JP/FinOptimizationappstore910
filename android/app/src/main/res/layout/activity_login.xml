@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main">
+
+    <ImageView
+        android:id="@+id/imv_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x12"
+        android:paddingRight="@dimen/x12">
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y85"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x30" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y38"
+            android:layout_marginTop="@dimen/y30"
+            android:background="@drawable/bg_white_color_round"
+            android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM_"
+            android:hint="@string/input_phone"
+            android:inputType="textVisiblePassword"
+            android:lines="1"
+            android:paddingLeft="@dimen/x8"
+            android:paddingRight="@dimen/x8"
+            android:textColor="@color/black2"
+            android:textColorHint="@color/black2"
+            android:textSize="@dimen/x15" />
+
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y38"
+            android:layout_marginTop="@dimen/y26"
+            android:background="@drawable/bg_white_color_round"
+            android:hint="@string/input_pwd"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:paddingLeft="@dimen/x8"
+            android:paddingRight="@dimen/x8"
+            android:textColor="@color/black2"
+            android:textColorHint="@color/black2"
+            android:textSize="@dimen/x15" />
+
+        <TextView
+            android:id="@+id/btn_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/y8"
+            android:layout_marginRight="@dimen/x10"
+            android:text="忘记密码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_login"
+            style="@style/wiselink_button"
+            android:layout_marginTop="@dimen/y40"
+            android:text="@string/login" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">金融风控</string>
+    <string name="smsdetail_before_min">%d分钟前 </string>
+    <string name="smsdetail_before_hour">%d小时前 </string>
+    <string name="smsdetail_before_day">%d天前</string>
+    <string name="is_end_time">已到期</string>
+    <string name="day">天</string>
+    <string name="unknow">未知</string>
+    <string name="smsdetail_after_min">%d分钟</string>
+    <string name="smsdetail_after_hour">%d小时</string>
+    <string name="smsdetail_after_day">%d天</string>
+    <!-- array_week_days -->
+    <string name="sunday">星期日</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="network_error">网络请求超时,请重试!</string>
+
+    <string name="allow">允许</string>
+    <string name="denied">拒绝</string>
+    <string name="go_set">去设置</string>
+    <string name="close">关闭</string>
+    <string name="premission_request">权限申请</string>
+    <string name="request_permission_storage">在设置-应用-金融风控-权限中开启外部存储权限，以正常使用其外部存储功能。</string>
+    <string name="request_permission_location">在设置-应用-金融风控-权限中开启定位权限，以正常使用定位功能。</string>
+    <string name="request_permission_camera">在设置-应用-金融风控-权限中开启相机权限，以正常使用相机功能。</string>
+    <string name="request_permission_phone">在设置-应用-金融风控-权限中开启电话权限，以正常使用电话功能。</string>
+    <string name="request_permission_all">在设置-应用-金融风控-权限中开启外部存储、电话权限，以正常使用其功能。</string>
+
+    <string name="get_file_exception">手机获取文件异常</string>
+    <string name="save_file_exception">手机存储异常,请尝试重新下载！</string>
+    <string name="soft_updating">软件更新中，请稍后</string>
+
+    <string name="login">登　录</string>
+    <string name="input_phone">输入账号</string>
+    <string name="input_pwd">输入密码</string>
+
+    <string name="speed_fast">快速回放</string>
+    <string name="speed_middle">匀速回放</string>
+    <string name="speed_slow">慢速回放</string>
+
+    <string name="not_install_this_app">您未安装此应用</string>
+
+</resources>

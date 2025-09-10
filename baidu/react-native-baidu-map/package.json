@@ -1,0 +1,51 @@
+{
+  "_from": "react-native-baidu-map@^0.5.1",
+  "_id": "react-native-baidu-map@0.5.1",
+  "_inBundle": false,
+  "_integrity": "sha1-hJqSO0Ix9gkqAJxvOVmur2e57Yg=",
+  "_location": "/react-native-baidu-map",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-baidu-map@^0.5.1",
+    "name": "react-native-baidu-map",
+    "escapedName": "react-native-baidu-map",
+    "rawSpec": "^0.5.1",
+    "saveSpec": null,
+    "fetchSpec": "^0.5.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/react-native-baidu-map/download/react-native-baidu-map-0.5.1.tgz",
+  "_shasum": "849a923b4231f6092a009c6f3959aeaf67b9ed88",
+  "_spec": "react-native-baidu-map@^0.5.1",
+  "_where": "/Users/janker/react-native/trunk/FinOptimization",
+  "author": {
+    "name": "lovebing"
+  },
+  "bugs": {
+    "url": "https://github.com/lovebing/react-native-baidu-map/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Baidu Map SDK modules and view for React Native(Android & IOS), support react native 0.30+.",
+  "homepage": "https://github.com/lovebing/react-native-baidu-map#readme",
+  "keywords": [
+    "Baidu Map",
+    "React Native"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "react-native-baidu-map",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovebing/react-native-baidu-map.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.5.1"
+}
